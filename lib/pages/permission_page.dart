@@ -36,19 +36,22 @@ class PermissionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          ElevatedButton(
-            onPressed: () async {
-              if(await _checkLocationPermission()) {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
-              }
-            },
-            child: const Text("Enable Location"),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () async {
+                if(await _checkLocationPermission()) {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                }
+              },
+              child: const Text("Enable Location"),
+            ),
+          ],
+        ),
       ),
+
     );
   }
 

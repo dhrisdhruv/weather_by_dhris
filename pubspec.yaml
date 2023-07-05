@@ -38,6 +38,8 @@ dependencies:
   geolocator: ^9.0.2
   dio: ^5.2.1+1
   get: ^4.6.5
+  quiver: ^3.2.1
+  syncfusion_flutter_charts: ^22.1.37
 
 dev_dependencies:
   flutter_test:
