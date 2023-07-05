@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:dio/dio.dart';
 import 'package:quiver/iterables.dart';
-import 'package:syncfusion_flutter_charts/charts.dart' as charts;
-import 'package:syncfusion_flutter_charts/sparkcharts.dart';
 
 
 class HomePage extends StatefulWidget {
